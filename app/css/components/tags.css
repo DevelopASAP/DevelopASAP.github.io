@@ -1,0 +1,28 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags-item {
+  border-radius: 24px;
+  padding: 12px 16px;
+  background: var(--gray-tertiary);
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.tags-item img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .tags-item {
+    padding: 8px 12px;
+  }
+}

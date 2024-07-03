@@ -1,0 +1,61 @@
+.go {
+  display: flex;
+  flex-direction: column;
+  padding: 56px;
+  border-radius: 40px;
+  gap: 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.go img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 570px;
+  height: 397px;
+}
+
+.go .h1 {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+.go .h1 svg {
+  height: auto;
+}
+
+.go .btn {
+  width: max-content;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .go {
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .go img {
+    display: none;
+  }
+
+  .go .h1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .go .h1 {
+    width: 80%;
+    letter-spacing: -2px;
+    font-weight: 500;
+  }
+
+  .go .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--pink-primary);
+  width: 56px;
+  height: 56px;
+  position: static;
+  transition: 0.3s;
+}
+
+/* .swiper-button-next svg, .swiper-button-prev svg {
+    width: 40px;
+    height: 40px;
+} */
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--pink-tertiary);
+}
+
+.swiper-button-disabled {
+  background: var(--white-tertiary) !important;
+  backdrop-filter: blur(22px);
+  opacity: 1 !important;
+}
+
+.swiper-button-disabled svg path {
+  fill: var(--pink-primary) !important;
+}

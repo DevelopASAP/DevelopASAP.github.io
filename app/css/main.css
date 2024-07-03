@@ -1,0 +1,25 @@
+@import "./fonts.css";
+@import "./params.css";
+@import "./default.css";
+
+/* Компоненты */
+@import "./components/loader.css";
+@import "./components/header.css";
+@import "./components/header-consultation.css";
+@import "./components/swiper.css";
+@import "./components/tags.css";
+@import "./components/tabs.css";
+@import "./components/chips.css";
+@import "./components/footer.css";
+@import "./components/details.css";
+@import "./components/online.css";
+@import "./components/consultation.css";
+
+/* Модалки */
+@import "./modals/request-form.css";
+
+/* Страницы */
+@import "./pages/main/index.css";
+@import "./pages/course-page/index.css";
+@import "./pages/payment/index.css";
+@import "./pages/learning/main.css";

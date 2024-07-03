@@ -1,0 +1,137 @@
+/* about */
+.about-tabs {
+  flex-direction: column;
+  color: var(--pink-primary);
+}
+
+.about-block {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.about-content {
+  border-radius: 40px;
+  background-color: #fff;
+  width: calc(100% - 8px - 448px);
+  overflow: hidden;
+}
+.about-tabs {
+  width: 448px;
+  flex-shrink: 0;
+}
+.about-content .tabs-card {
+  height: 100%;
+}
+
+.about-content .tabs-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-experts .swiper-wrapper {
+  padding: 32px;
+}
+.swiper-experts {
+  position: relative;
+}
+
+.swiper-experts::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 292px;
+  z-index: 1;
+  background: linear-gradient(
+    271deg,
+    #fff 18.56%,
+    rgba(255, 255, 255, 0) 99.55%
+  );
+}
+.swiper-experts .swiper-slide {
+  /* max-width: 350px !important; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experts-card {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 24px;
+  background-color: var(--gray-tertiary);
+}
+
+.experts-card-img {
+  height: 64px;
+}
+
+.experts-card-img img {
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.experts-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experts-card-title a {
+  height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    overflow: hidden;
+  }
+  .about-block {
+    flex-direction: column;
+  }
+
+  .about-tabs {
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .about-tabs > .tabs-item {
+    min-width: 432px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .swiper-experts > .swiper-wrapper {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-content {
+    display: none;
+  }
+
+  .about-tabs {
+    flex-direction: column;
+    pointer-events: none;
+  }
+
+  .about-tabs .tabs-item {
+    min-width: auto;
+    background-color: var(--white-primary) !important;
+    color: var(--pink-primary) !important;
+  }
+
+  .about-tabs .tabs-item svg path {
+    fill: var(--pink-primary) !important;
+  }
+}

@@ -1,0 +1,72 @@
+.t-leave-request {
+    padding: 32px;
+    border-radius: 40px;
+    background-color: #13010A;
+    background-image: url("../../../images/course/rocket-bg.png");
+    background-repeat: no-repeat;
+    background-size: 617px 552px;
+    background-position: 768px -60px;
+}
+
+@media (max-width: 1023px) {
+    .t-leave-request {
+        padding: 16px;
+        border-radius: 24px;
+        background-image: none;
+    }
+}
+
+.t-leave-request__title {
+    margin: 0 0 16px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+}
+
+@media (max-width: 1023px) {
+    .t-leave-request__title {
+        margin: 0 0 24px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.24px;
+    }
+}
+
+.t-leave-request__desc {
+    max-width: 672px;
+    margin: 0 0 48px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+    .t-leave-request__desc {
+        display: none;
+    }
+
+}
+
+.t-leave-request__btn {
+    width: 266px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+@media (max-width: 1023px) {
+    .t-leave-request__btn {
+        height: 72px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-leave-request__btn {
+        width: 100%;
+    }
+}

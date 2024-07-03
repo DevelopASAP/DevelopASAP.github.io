@@ -1,0 +1,40 @@
+.reviews-slide {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 2fr;
+}
+.reviews-swiper .card-content {
+  gap: 16px;
+  margin-top: auto;
+  min-height: 184px;
+}
+
+.reviews-slide-review {
+  padding: 32px;
+  border-radius: 40px;
+  min-height: 600px;
+  position: relative;
+}
+
+.reviews-slide-review-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 432px;
+  height: 332px;
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews-slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  .reviews-slide-review-img {
+    display: none;
+  }
+
+  .reviews-slide-review {
+    min-height: max-content;
+  }
+}

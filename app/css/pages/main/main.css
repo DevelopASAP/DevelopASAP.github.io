@@ -1,0 +1,122 @@
+.main {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "area-text area-media" "area-btns area-media";
+  grid-template-rows: 1fr 76px;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden !important;
+  position: relative;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.main-text {
+  grid-area: area-text;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 40px;
+  padding: 32px;
+}
+
+.main-text-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.main-text-info svg {
+  width: 100%;
+  height: auto;
+}
+
+.main-text-info .tags {
+  margin-top: 24px;
+}
+
+.main-media {
+  grid-area: area-media;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  border-radius: 40px;
+  width: 100%;
+  height: 585px;
+  overflow: hidden;
+}
+
+.main-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-btns {
+  grid-area: area-btns;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, calc(50% - 4px));
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    position: relative;
+    grid-template-areas: "area-text area-text" "area-btns area-btns";
+    grid-template-rows: 1fr 76px;
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
+
+  .main-text-info .tags {
+    display: none;
+  }
+
+  .main-text {
+    background-color: transparent;
+    color: var(--white-primary);
+    margin: 320px 0 32px;
+    padding: 0;
+  }
+
+  .main-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 439px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    grid-template-rows: 1fr 152px;
+  }
+
+  .main-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-area: inherit;
+  }
+
+  .main-btns .btn {
+    width: 100%;
+  }
+
+  .main-media video {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .main .h1 {
+    padding: 0 16px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

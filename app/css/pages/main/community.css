@@ -1,0 +1,94 @@
+.community {
+  position: relative;
+}
+
+.community .block-head .h2 {
+  max-width: 50%;
+}
+
+.community .btn {
+  width: 329px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.community-block {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+  grid-template-areas: "area-community area-news area-photo area-photo" "area-community area-free area-photo area-photo" "area-madi area-members area-members area-devops" "area-madi area-members area-members area-devops";
+}
+
+.community-block > div {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.lottie-1 {
+  grid-area: area-community;
+}
+
+.lottie-2 {
+  grid-area: area-news;
+}
+
+.lottie-3 {
+  grid-area: area-photo;
+}
+
+.lottie-4 {
+  grid-area: area-free;
+}
+
+.lottie-5 {
+  grid-area: area-madi;
+}
+
+.lottie-6 {
+  grid-area: area-members;
+}
+
+.lottie-7 {
+  grid-area: area-devops;
+}
+
+@media screen and (min-width: 1441px) {
+  .community .btn {
+    width: max-content;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .community-block {
+    grid-template-areas: "area-community area-news" "area-community area-free" "area-photo area-photo" "area-devops area-madi " "area-members area-members";
+  }
+
+  .community .block-head .h2 {
+    max-width: 100%;
+  }
+
+  .community .btn {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .community-block {
+    grid-template-areas: "area-community area-news" "area-community area-free" "area-devops area-madi" "area-devops area-madi";
+  }
+
+  .community-block > div {
+    border-radius: 24px;
+  }
+
+  .lottie-3,
+  .lottie-6 {
+    display: none;
+  }
+
+  .community .btn {
+    width: 100%;
+  }
+}

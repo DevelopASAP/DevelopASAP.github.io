@@ -1,0 +1,56 @@
+@import "./preview.css";
+@import "./growth.css";
+@import "./why-asap.css";
+@import "./leave-request.css";
+@import "./course-team.css";
+@import "./course-calendar.css";
+@import "./course-program.css";
+@import "./course-help.css";
+@import "./course-price.css";
+@import "./questions.css";
+@import "./course-other.css";
+@import "./go-to-result.css";
+@import "./course-feedback.css";
+
+.course-page .block-head {
+	max-width: 60%;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media (max-width: 1023px) {
+  .course-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .course-page main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .course-page .block-head {
+	max-width: 100%;
+  }
+}
+
+
+.course-page .calendar {
+  overflow: visible;
+}
+
+@media (max-width: 1023px) {
+  .course-page .calendar__title {
+    margin: 0 0 24px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .course-page .mb {
+    margin-bottom: 56px;
+  }
+}

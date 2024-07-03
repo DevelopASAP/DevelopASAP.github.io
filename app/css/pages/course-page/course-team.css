@@ -1,0 +1,223 @@
+.t-course-team__title {
+    margin: 0 0 40px;
+    color: #13010A;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -1.68px;
+}
+
+@media (max-width: 1023px) {
+    .t-course-team__title {
+        margin: 0 0 24px;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.64px;
+    }
+}
+
+.t-course-team__tabs {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+@media (max-width: 599px) {
+    .t-course-team__tabs::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.t-course-team__tabs._four .t-course-team__tab-btn + .t-chips__label {
+    display: inline-flex;
+    width: 100%;
+    max-width: calc((100% - 8px * 3) / 4);
+
+}
+
+.t-course-team__content {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+#team-tab-btn-1:checked~#team-content-1,
+#team-tab-btn-2:checked~#team-content-2,
+#team-tab-btn-3:checked~#team-content-3,
+#team-tab-btn-4:checked~#team-content-4,
+#team-tab-btn-5:checked~#team-content-5,
+#team-content-1._open,
+#team-content-2._open,
+#team-content-3._open,
+#team-content-4._open,
+#team-content-5._open {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 32px;
+    border-radius: 40px;
+    background: #FFF;
+    clip-path: none;
+    clip: unset;
+    overflow: auto;
+}
+
+@media (max-width: 1023px) {
+    #team-tab-btn-1:checked~#team-content-1,
+    #team-tab-btn-2:checked~#team-content-2,
+    #team-tab-btn-3:checked~#team-content-3,
+    #team-tab-btn-4:checked~#team-content-4,
+    #team-tab-btn-5:checked~#team-content-5,
+    #team-content-1._open,
+    #team-content-2._open,
+    #team-content-3._open,
+    #team-content-4._open,
+    #team-content-5._open {
+        padding: 16px;
+        border-radius: 24px;
+        background: #FFF;
+    }
+}
+
+.t-course-team__tab-btn + .t-chips__label {
+    display: inline-flex;
+    width: 100%;
+    max-width: calc((100% - 8px * 4) / 5);
+
+}
+
+@media (max-width: 599px) {
+    .t-course-team__tab-btn + .t-chips__label._desktop,
+    .t-course-team__tabs._four .t-course-team__tab-btn + .t-chips__label._desktop,
+    .t-course-team__tab-btn._desktop {
+        display: none;
+    }
+}
+
+.t-course-team__tabs_mobile {
+    display: none;
+}
+
+@media (max-width: 599px) {
+    .t-course-team__tabs_mobile {
+        display: flex;
+        gap: 8px;
+        overflow-x: scroll;
+    }
+
+    .t-course-team__tabs_mobile::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.t-course-team__subtitle {
+    margin: 0 0 16px;
+    color: #13010A;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+}
+
+@media (max-width: 1023px) {
+    .t-course-team__subtitle {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.24px;
+    }
+}
+
+.t-course-team__desc {
+    max-width: 772px;
+    margin: 0 0 32px;
+    color: #13010A;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+    .t-course-team__desc {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: normal;
+    }
+}
+
+.t-course-team__wrap {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 599px) {
+    .t-course-team__wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.t-course-team__user-link {
+    width: calc(50% - 4px);
+    min-height: 316px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 56px 32px;
+    border-radius: 24px;
+    background: #F1F1F1;
+}
+
+@media (max-width: 1023px) {
+    .t-course-team__user-link {
+        min-height: 252px;
+        padding: 24px 16px;
+        border-radius: 24px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-course-team__user-link {
+        width: 100%;
+    }
+}
+
+.t-course-team__user-link._full {
+    width: 100%;
+}
+
+.t-course-team__user-avatar {
+    margin: 0 auto 24px;
+}
+
+.t-course-team__name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 8px;
+    color: #13010A;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    transition: color 0.3s ease;
+}
+
+.t-course-team__name svg path {
+    transition: fill 0.3s ease;
+}
+
+.t-course-team__text {
+    color: #13010A;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}

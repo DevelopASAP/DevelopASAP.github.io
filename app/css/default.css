@@ -1,0 +1,435 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Suisse Intl", "Arial", sans-serif;
+}
+
+:root {
+  font-size: 18px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Фон */
+
+.bg_white {
+  background: var(--white-primary);
+}
+
+/* Заголовки */
+
+.h1 {
+  font-size: 64px;
+  line-height: 82px;
+  letter-spacing: -2.56px;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1.68px;
+  font-weight: 500;
+}
+
+h2.span {
+  display: inline-block;
+}
+
+h2 {
+  perspective: 600px;
+  -webkit-perspective: 600px;
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  font-weight: 500;
+}
+
+.h4 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 4.795vw;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.title-pink {
+  color: var(--pink-primary);
+}
+
+/* Стили текста */
+
+.txt-lg {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+}
+
+.txt-medium {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.txt-regul {
+  font-weight: 400;
+}
+
+.txt-semibold {
+  font-weight: 600;
+  letter-spacing: -0.54px;
+}
+
+.txt-small {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.txt-cap {
+  font-size: 14px;
+  color: var(--gray-primary);
+}
+
+/* Центровка, Блоки, Отступы */
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+}
+
+.mb {
+  margin-bottom: 200px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.block-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Ссылки */
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+a,
+a:hover {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a._hover:hover {
+  color: var(--pink-tertiary) !important;
+}
+
+a:focus {
+  outline: none;
+  background: #d3d3d3;
+}
+
+a:focus-visible,
+a:focus:not(:focus-visible) {
+  background: transparent;
+}
+
+a:focus-visible {
+  outline: 2px solid red;
+}
+
+.button-cls:active,
+a:active {
+  transform: scale3d(0.98, 0.98, 0.98) !important;
+  transition-delay: 0s !important;
+  transition: all 0.2s !important;
+}
+
+/* Кнопки */
+
+.btn {
+  padding: 20px 32px;
+  border: 2px solid transparent;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.btn_bg {
+  background: var(--pink-primary);
+  color: #ffffff;
+}
+
+.btn_reverse {
+  background: #ffffff;
+  color: var(--pink-primary);
+}
+
+.btn_bg .svg {
+  background-color: var(--white-primary);
+}
+.btn_bg svg path {
+  fill: var(--pink-primary);
+}
+
+.btn_border {
+  border: 2px solid var(--pink-primary);
+  color: var(--pink-primary);
+  background-color: var(--white-primary);
+}
+.btn_border .svg {
+  background-color: var(--pink-primary);
+}
+.btn_border svg path {
+  fill: var(--white-primary);
+  transition: 0.3s;
+}
+
+.btn_white {
+  background: var(--white-primary);
+  color: #13010a;
+}
+
+.btn_white .svg {
+  background-color: #13010a;
+}
+
+.btn_white svg path {
+  fill: var(--white-primary);
+  transition: 0.3s;
+}
+
+.btn_with-svg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 24px;
+}
+.btn_with-svg .svg {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.btn_with-svg svg {
+  width: inherit;
+  height: inherit;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.btn_bg:hover {
+  background: var(--pink-tertiary);
+}
+
+.btn_bg:hover svg path {
+  fill: var(--pink-tertiary);
+}
+
+.btn_border:hover {
+  background: var(--gray-tertiary);
+}
+
+.btn-animate {
+  overflow: hidden;
+}
+
+.btn-animate:hover .fly svg:nth-child(1) {
+  transform: translate(55%, -52%);
+}
+
+.fly svg:nth-child(2) {
+  transform: translateX(-60%);
+}
+
+.btn-animate:hover .fly svg:nth-child(2) {
+  transform: translate(-1%, -110%);
+}
+
+.btn-animate .down svg {
+  transform: translateY(-106%);
+}
+
+.btn-animate:hover .down svg {
+  transform: translateY(0);
+}
+
+.btn-animate .right {
+  display: flex;
+}
+
+.btn-animate .right svg {
+  transform: translateX(-100%);
+  min-width: 56px;
+}
+
+.btn-animate:hover .right svg {
+  transform: translateX(0);
+}
+
+.btn_black {
+  background: var(--color-border);
+  color: var(--white-primary);
+}
+
+.btn_black .svg {
+  background-color: var(--white-primary);
+}
+
+.btn_black:hover {
+  background: var(--white-primary);
+  border-color: var(--color-border);
+  color: var(--color-border);
+}
+.btn_black:hover .svg {
+  background: var(--color-border);
+}
+.btn_black:hover svg path {
+  fill: var(--white-primary);
+}
+
+/* Анимации */
+
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider-btns {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
+}
+
+._pink-hover,
+._blue-hover {
+  transition: 0.3s 0.1s;
+}
+
+._pink-hover:hover {
+  background-color: var(--pink-primary);
+}
+
+._blue-hover:hover {
+  background-color: var(--blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+  .h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .h3,
+  .h4 {
+    font-size: 24px;
+    line-height: 100%;
+  }
+
+  .txt-lg {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .txt-small {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .mb {
+    margin-bottom: 56px;
+  }
+
+  .block {
+    gap: 24px;
+  }
+
+  .slider-btns {
+    display: none;
+  }
+}
+
+.modal-close-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(7, 4, 6, 0.6);
+  z-index: 99;
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}

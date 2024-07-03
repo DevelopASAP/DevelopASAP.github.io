@@ -1,0 +1,40 @@
+.t-chips__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 24px 32px;
+    border-radius: 24px;
+    background: #FFF;
+    color: #13010A;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.54px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+    .t-chips__label {
+        padding: 16px 24px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.14px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-chips__label {
+        min-width: 145px;
+        height: 72px;
+    }
+}
+
+.t-chips__input:checked + .t-chips__label,
+.t-chips__label._active {
+    background: var(--pink-primary);
+    color: var(--white-primary);
+}

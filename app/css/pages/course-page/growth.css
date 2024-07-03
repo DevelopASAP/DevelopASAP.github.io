@@ -1,0 +1,344 @@
+.t-growth-block {
+    width: 100%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: minmax(auto, 904px) minmax(auto, 448px);
+    grid-template-rows: auto auto;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 504px 248px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+.t-growth-block__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__wrap {
+        gap: 0;
+    }
+}
+
+.t-growth-block__wrap._first {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__wrap._first {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__wrap._first {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+}
+
+.t-growth-block__card._blue {
+   background: #2831EF;
+}
+
+.t-growth-block__card._two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__card._two {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__card._two {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+}
+
+.t-growth-block__card._three {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 24px 15px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__card._three {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__card._three {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+}
+
+
+.t-growth-block__card._three .t-growth-block__caption {
+    padding: 0 9px;
+    margin: 0 0 64px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__card._three .t-growth-block__caption {
+        margin: 0 0 72px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__card._three .t-growth-block__caption {
+        margin: 0 0 25px;
+    }
+}
+
+.t-growth-block__card._blue .t-growth-block__caption {
+    color: #FFFFFF;
+}
+
+.t-growth-block__wrap-chart {
+    max-width: 904px;
+}
+
+.t-growth-block__card {
+    width: 100%;
+    padding: 32px;
+    border-radius: 40px;
+    background: #FFF;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__card {
+        padding: 16px;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+}
+
+.t-growth-block__title {
+    margin: 0 0 24px;
+    color: #13010A;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__title {
+        margin: 0 0 16px;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.64px;
+    }
+}
+
+.t-growth-block__desc {
+    margin: 0 0 40px;
+    color: #13010A;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__desc {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: normal;
+    }
+}
+
+.t-growth-block__list {
+   display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.t-growth-block__item {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 24px;
+    background: #F1F1F1;
+}
+
+.t-growth-block__item:first-child {
+    max-width: 340px;
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__item:first-child {
+        max-width: 100%;
+    }
+
+    .t-growth-block__item:first-child svg {
+        margin-left: auto;
+        display: block;
+    }
+}
+
+.t-growth-block__item:nth-child(2) {
+    max-width: 420px;
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__item:nth-child(2) {
+        max-width: 100%;
+    }
+}
+
+.t-growth-block__item:nth-child(3) {
+    max-width: 616px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__item:nth-child(3) {
+        max-width: 593px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__item:nth-child(3) {
+        max-width: 100%;
+    }
+}
+
+
+.t-growth-block__label {
+    margin: 0 0 4px;
+    color: #13010A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__label {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.t-growth-block__text {
+    color: rgba(37, 31, 34, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__text {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.14px;
+    }
+}
+
+.t-growth-block__salary {
+    margin-left: auto;
+    color: #13010A;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__salary {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.54px;
+    }
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__salary {
+        white-space: nowrap;
+    }
+}
+
+.t-growth-block__caption {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+}
+
+
+.t-growth-block__card .tabs {
+    margin: 24px 0 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__card .tabs .tabs-item_blue {
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.14px;
+    }
+}
+
+.t-growth-block__companies {
+    margin: 64px 0 0;
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+@media (max-width: 599px) {
+    .t-growth-block__companies  {
+        margin: 24px 0 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    .t-growth-block__card._three .t-growth-block__caption  {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.24px;
+    }
+}
+
+
+.t-growth-block__companies-link {
+    display: block;
+    height: max-content;
+    width: max-content;
+}
+
+.t-growth-block__companies-link img {
+    display: block;
+}
+
+.t-growth-block .tabs .tabs-item {
+    cursor: default;
+}
+
+.t-growth-block .tabs .tabs-item._active {
+    background: rgba(255, 255, 255, 0.3);
+}

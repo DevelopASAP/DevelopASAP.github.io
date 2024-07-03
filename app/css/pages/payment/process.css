@@ -1,0 +1,26 @@
+.payment .t-course-help__wrap {
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  padding: 32px;
+}
+
+.payment .t-course-help__list {
+  max-width: 100%;
+}
+
+.payment .t-course-help__text {
+  max-width: 800px;
+}
+
+.payment .t-course-help__item {
+  align-items: center;
+}
+
+.payment .t-course-help__item._done .t-course-help__text {
+  color: var(--status-green);
+}
+
+.payment .t-course-help__item._done .t-course-help__number {
+  background-color: var(--status-green);
+}

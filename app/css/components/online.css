@@ -1,0 +1,136 @@
+/* консультант */
+.online {
+  position: fixed;
+  z-index: 1;
+  bottom: 32px;
+  right: 32px;
+}
+.online-user-photo:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  transition: all 0.3s;
+}
+.online-user-photo:active {
+  transform: scale3d(0.98, 0.98, 0.98);
+  transition: all 0.1s;
+}
+.online-user-photo .online-user-photo img {
+  -webkit-box-shadow: 0 5px 40px 0 rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 5px 40px 0 rgb(0 0 0, 0.1);
+  box-shadow: 0 5px 40px 0 rgb(0 0 0 / 10%);
+  transition: all 0.3s;
+}
+.online-user-photo {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.online-user-photo img {
+  width: 90px;
+  border-radius: 50%;
+  border: 5px solid #efefef;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 5px 20px 0 rgb(0 0 0, 0.1);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+  transition: all 0.2s;
+}
+.online-user-text {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 0;
+  transform: translate3d(-95%, 0, 0);
+  transition: all 0.2s;
+  width: 13vw;
+  background: #efefef;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 40px 0 rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 5px 40px 0 rgb(0 0 0, 0.1);
+  box-shadow: 0 5px 40px 0 rgb(0 0 0 / 10%);
+}
+
+.online-user-text.visible {
+  transform: translate3d(-68%, -45%, 0);
+  transition: all 0.3s;
+  opacity: 1;
+  visibility: visible;
+}
+.online-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.online-buttons-tg,
+.online-buttons-wa {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background: #e4e4e4;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 2px;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+.online-buttons-tg:hover,
+.online-buttons-wa:hover {
+  background: #c3c3c3;
+  transition: all 0.3s;
+}
+.online-buttons-tg {
+  padding: 12px 10px;
+}
+.online-buttons-tg svg {
+  width: 30px;
+}
+.online-buttons-wa svg {
+  width: 34px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .online-user-text {
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .online-user-text {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .online-user-text {
+    width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .online {
+    bottom: 20px;
+    right: 20px;
+  }
+  .online-user-text {
+    width: 55vw;
+  }
+  .online-user-photo img {
+    width: 64px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .online {
+    right: 16px;
+  }
+  .online-user-text {
+    width: 70vw;
+  }
+  .online-user-photo img {
+    width: 20vw;
+  }
+  section.courses .block__title .courses-block-item-name-people-list img {
+    width: 15vw;
+  }
+}

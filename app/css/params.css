@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    --white-primary: #fff;
+    --white-secondary: rgba(255, 255, 255, 0.6);
+    --white-tertiary: rgba(255, 255, 255, 0.3);
+    --black-primary: rgba(19, 1, 10, 1);
+    --gray-primary: rgba(37, 31, 34, 0.7);
+    --gray-secondary: rgba(143, 143, 143, 0.3);
+    --gray-tertiary: #F1F1F1;
+    --overlay: rgba(7, 4, 6, 0.6);
+    --pink-primary: #E03A7B;
+    --pink-tertiary: #BC235F;
+    --pink-secondary: #ECB3CA;
+    --status-red: #D01111;
+    --status-green: #31C251;
+    --blue: #2831EF;
+    --orange: #FC5B00;
+    --purple: #C01BEA;
+    --color-text: #111;
+    --color-bg: #fff;
+    --color-link: #000;
+    --color-link-hover: #000;
+    --color-border: #000;
+    --marquee-bg: #000;
+    --marquee-text: #fff;
+    --menu-focus: #775e41;
+    color: var(--color-text);
+    background: var(--gray-tertiary);
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Suisse Intl';
+    /*font-family: reason-new, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}

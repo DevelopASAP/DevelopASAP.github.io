@@ -1,0 +1,1122 @@
+.t-course-calendar__wrap {
+  display: grid;
+  gap: 8px;
+}
+
+.t-course-calendar__card {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  border-radius: 40px;
+  background: #fff;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card {
+    padding: 16px;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__calendar-wrap {
+    overflow: hidden;
+  }
+}
+
+.t-course-calendar__wrap_one {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 680px 400px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_one {
+    grid-template-rows: 420px auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_one {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_events {
+    gap: 24px;
+  }
+}
+
+.t-course-calendar__card_events:first-child {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_events:first-child {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+}
+
+.t-course-calendar__card_events:nth-child(2) {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_events:nth-child(2) .t-course-calendar__sticker {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_events:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    flex-direction: column-reverse;
+  }
+}
+
+.t-course-calendar__card_events:last-child {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_events:last-child {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_events:last-child {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_events:last-child .t-course-calendar__container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_events:last-child .t-course-calendar__tooltip {
+    left: unset;
+    right: 0;
+  }
+
+  .t-course-calendar__card_events:last-child
+    .t-course-calendar__tooltip::before {
+    left: unset;
+    right: 20px;
+  }
+}
+
+.t-course-calendar__card_events:last-child .t-course-calendar__subtitle {
+  margin: 0 0 16px;
+}
+
+.t-course-calendar__wrap_two {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 456px 224px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_two {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 312px 360px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_two {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.t-course-calendar__card_soft-skills:first-child {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_two picture {
+    display: block;
+    height: 448px;
+  }
+
+  .t-course-calendar__wrap_two picture img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_soft-skills:first-child {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  .t-course-calendar__wrap_two picture {
+    margin: 24px 0 0;
+    height: 196px;
+  }
+}
+
+.t-course-calendar__card_soft-skills:nth-child(2) {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_soft-skills:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+}
+
+.t-course-calendar__card_soft-skills:last-child {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background: #2831ef;
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_soft-skills:last-child {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+}
+
+.t-course-calendar__card_soft-skills:first-child .t-course-calendar__subtitle,
+.t-course-calendar__card_soft-skills:first-child .t-course-calendar__desc {
+  text-align: left;
+}
+
+.t-course-calendar__wrap_three {
+  grid-template-columns: repeat(2, calc(50% - 8px));
+  grid-template-rows: 463px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_three {
+    grid-template-columns: 100%;
+    grid-template-rows: 156px 297px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_three {
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.t-course-calendar__wrap_four {
+  grid-template-columns: calc(100% - 448px) 448px;
+  grid-template-rows: 434px 343px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_four {
+    grid-template-columns: 417px 327px;
+    grid-template-rows: 364px 336px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_four {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.t-course-calendar__card_work:first-child {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_work:first-child {
+    flex-wrap: wrap;
+  }
+}
+
+.t-course-calendar__card_work:nth-child(2) {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_work:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+}
+
+.t-course-calendar__card_work:last-child {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_work:last-child {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+}
+
+.t-course-calendar__card_work:nth-child(2) .t-course-calendar__subtitle {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_work:nth-child(2) .t-course-calendar__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+  }
+}
+
+.t-course-calendar__card_work:first-child
+  .t-course-calendar__container:first-child {
+  max-width: 617px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_work:first-child
+    .t-course-calendar__container:first-child {
+    max-width: 100%;
+  }
+}
+
+.t-course-calendar__card_work:first-child
+  .t-course-calendar__container:last-child {
+  position: relative;
+  width: 48.75%;
+  background-image: url("../../../images/work-decor.svg");
+  background-repeat: no-repeat;
+  background-position: 95px 0;
+  background-size: 183px 138px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_work:first-child
+    .t-course-calendar__container:last-child {
+    width: 327px;
+    margin: 0 auto;
+    background-size: 90px 69px;
+    background-position: 49px 3px;
+    height: 184px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_work:first-child
+    .t-course-calendar__container:last-child {
+    width: 100%;
+  }
+}
+
+.t-course-calendar__wrap_five {
+  grid-template-columns: repeat(3, 33.33%);
+  /*grid-template-rows: repeat(2, 434px);*/
+  grid-template-rows: 434px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_five {
+    grid-template-columns: repeat(2, 50%);
+    /*grid-template-rows: 327px 174px 237px;*/
+    grid-template-rows: 327px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_five {
+    grid-template-columns: 100%;
+    /*grid-template-rows: repeat(4, auto);*/
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.t-course-calendar__card_result:first-child {
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_result:first-child {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_result:first-child {
+    grid-column: 1/-1;
+  }
+}
+
+.t-course-calendar__card_result:nth-child(2) {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_result:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_result:nth-child(2) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+
+.t-course-calendar__card_result:nth-child(3) {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_result:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_result:nth-child(3) {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+}
+
+.t-course-calendar__card_result:nth-child(3) .t-course-calendar__subtitle {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_result:nth-child(3) .t-course-calendar__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+  }
+}
+
+/*.t-course-calendar__card_result:last-child {*/
+/*  grid-row: 2/3;*/
+/*  grid-column: 2/4;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+/*@media (max-width: 1023px) {*/
+/*  .t-course-calendar__card_result:last-child {*/
+/*    grid-row: 3/4;*/
+/*    grid-column: 1/-1;*/
+/*  }*/
+/*}*/
+
+/*@media (max-width: 599px) {*/
+/*  .t-course-calendar__card_result:last-child {*/
+/*    grid-row: 4/5;*/
+/*  }*/
+/*}*/
+
+.t-course-calendar__card_result:first-child .t-course-calendar__subtitle,
+.t-course-calendar__card_result:first-child .t-course-calendar__desc {
+  max-width: 624px;
+}
+
+.t-course-calendar__card_result._blue {
+  background: #2831ef;
+}
+
+.t-course-calendar__card_result._blue .t-course-calendar__desc {
+  color: #fff;
+}
+
+.t-course-calendar__container {
+  position: relative;
+}
+
+.t-course-calendar__sticker {
+  position: absolute;
+  display: flex;
+  width: 128px;
+  height: 128px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__sticker {
+    width: 86px;
+    height: 86px;
+  }
+}
+
+.t-course-calendar__sticker._blue {
+  top: 253px;
+  left: 418px;
+  background: #2831ef;
+  transform: rotate(20deg);
+}
+
+.t-course-calendar__sticker._pink {
+  top: 205px;
+  left: -107px;
+  background: #e03a7b;
+  transform: rotate(-20deg);
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__sticker._pink {
+    top: -40px;
+    left: 462px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__sticker._pink {
+    left: 160px;
+  }
+}
+
+.t-course-calendar__sticker span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__sticker span {
+    font-size: 10px;
+    letter-spacing: -0.1px;
+  }
+}
+
+.t-course-calendar__sticker ._big-letter {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__sticker ._big-letter {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+  }
+}
+
+.t-course-calendar__subtitle {
+  margin: 0 0 24px;
+  color: #13010a;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__subtitle {
+    margin: 0 0 16px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+  }
+}
+@media (max-width: 599px) {
+  .t-course-calendar__subtitle {
+    max-width: 325px;
+  }
+}
+
+.t-course-calendar__active-tooltip {
+  position: relative;
+  color: #e03a7b;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.t-course-calendar__active-tooltip:hover .t-course-calendar__tooltip {
+  display: block;
+}
+
+.t-course-calendar__tooltip {
+  display: none;
+  position: absolute;
+  top: -133px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 412px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #fff;
+  color: #13010a;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  box-shadow: 2px 4px 20px 0 rgba(41, 6, 6, 0.15);
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__tooltip {
+    left: 0;
+    transform: translateX(0);
+    width: 288px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__card_events:nth-child(2) .t-course-calendar__tooltip {
+    left: unset;
+    right: 0;
+  }
+  .t-course-calendar__card_events:nth-child(2)
+    .t-course-calendar__tooltip::before {
+    left: unset;
+    right: 30px;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__card_events:nth-child(2) .t-course-calendar__tooltip {
+    left: 0;
+    right: unset;
+  }
+  .t-course-calendar__card_events:nth-child(2)
+    .t-course-calendar__tooltip::before {
+    right: unset;
+    left: 20px;
+    transform: translateX(0);
+  }
+  .t-course-calendar__card_events:nth-child(3) .t-course-calendar__tooltip {
+    width: 248px;
+    top: -157px;
+  }
+}
+
+.t-course-calendar__tooltip::before {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 31px;
+  height: 15px;
+  background-image: url("../../../images/tooltip-accent.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 31px 15px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__tooltip::before {
+    left: 20px;
+    transform: translateX(0);
+  }
+}
+
+.t-course-calendar__tooltip span {
+  font-weight: 600;
+}
+
+.t-course-calendar__desc {
+  color: #13010a;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__desc {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__container picture {
+    width: 100%;
+  }
+  .t-course-calendar__container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.t-course-calendar__img {
+  border-radius: 24px;
+}
+
+.t-course-calendar__img._no-br {
+  border-radius: 0;
+}
+
+.t-course-calendar__soft-skills-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.t-course-calendar__soft-skills-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  border-radius: 24px;
+  background: #fff;
+  color: #13010a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.t-course-calendar__wrap_three .t-course-calendar__swiper {
+  width: 100%;
+  border-radius: 40px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_three .t-course-calendar__swiper {
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__swiper-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_three .swiper-slide {
+    height: 296px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_three .t-course-calendar__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.t-course-calendar__wrap_four .t-course-calendar__swiper {
+  width: 448px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_four .t-course-calendar__swiper {
+    width: 100%;
+    max-width: 327px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_four .t-course-calendar__swiper {
+    max-width: calc(100% - 16px);
+  }
+}
+
+.t-course-calendar__wrap_four .swiper-wrapper {
+  width: 448px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__wrap_four .swiper-wrapper {
+    width: 100%;
+    max-width: 327px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__wrap_four .swiper-wrapper {
+    max-width: 100%;
+  }
+}
+
+.t-course-calendar__swiper_informal-communication .t-course-calendar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.t-course-calendar__swiper {
+  position: relative;
+}
+
+.t-course-calendar__swiper .swiper-slide picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.t-course-calendar__swiper-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  border: 1px solid rgba(143, 143, 143, 0.3);
+  background: #fff;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.t-course-calendar__swiper-btn._prev {
+  left: -28px;
+}
+
+.t-course-calendar__swiper-btn._next {
+  right: -28px;
+}
+
+.t-course-calendar__team-card {
+  position: absolute;
+  padding: 24px;
+  border-radius: 24px;
+  background: #2831ef;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__team-card {
+    padding: 11px;
+  }
+}
+
+.t-course-calendar__team-card._black {
+  top: 154px;
+  left: 11px;
+  max-width: 459px;
+  background: #13010a;
+  transform: rotate(-3deg);
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__team-card._black {
+    top: 76px;
+    left: 11px;
+    max-width: 254px;
+  }
+}
+
+.t-course-calendar__team-card._black .t-course-calendar__team-item {
+  width: calc(50% - 12px);
+}
+
+.t-course-calendar__team-card._blue {
+  top: 9px;
+  left: 319px;
+  max-width: 316px;
+  transform: rotate(5deg);
+  background: #2831ef;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__team-card._blue {
+    top: 4px;
+    left: 157px;
+    max-width: 155px;
+  }
+}
+
+.t-course-calendar__team-card._blue .t-course-calendar__team-item {
+  width: 100%;
+}
+
+.t-course-calendar__caption {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__caption {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.118px;
+  }
+}
+
+.t-course-calendar__caption span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__caption span {
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: -0.079px;
+  }
+}
+
+.t-course-calendar__team-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__team-list {
+    gap: 3px 11px;
+  }
+}
+
+.t-course-calendar__team-item {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__team-item {
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .js-project-swiper .swiper-slide {
+    max-width: 327px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 599px) {
+  .js-project-swiper .swiper-slide {
+    max-width: 100%;
+  }
+}
+
+.t-course-calendar__project-slide {
+  display: flex;
+  width: 448px;
+  height: 100%;
+  min-height: 343px;
+  padding: 48px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: #fff;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__project-slide {
+    width: 327px;
+    min-height: 336px;
+    padding: 48px 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__project-slide {
+    width: 100%;
+    min-height: 360px;
+  }
+}
+
+.t-course-calendar__project-slide .t-course-calendar__img {
+  margin: 0 auto 32px;
+}
+
+.t-course-calendar__slide-title {
+  margin: 0 0 16px;
+  color: #13010a;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+}
+
+.t-course-calendar__slide-link {
+  transition: color 0.3s ease;
+  color: #e03a7b;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.t-course-calendar__slide-link:hover {
+  color: #e03a7b;
+}
+
+.t-course-calendar__slide-text {
+  color: #13010a;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.t-course-calendar__percent {
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -2.56px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__percent {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+}
+
+.t-course-calendar__spec-row {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 599px) {
+  .t-course-calendar__spec-row {
+    flex-direction: column;
+    margin: 0 0 24px;
+  }
+}
+
+.t-course-calendar__spec-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 8px;
+}
+
+.t-course-calendar__spec-name {
+  width: 100%;
+  color: #13010a;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__spec-name {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+  }
+}
+
+.t-course-calendar__spec-tag {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 24px;
+  background: #f1f1f1;
+  color: #13010a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__spec-tag {
+    height: 48px;
+  }
+}
+
+.t-course-calendar__spec-comment {
+  color: #13010a;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__spec-comment {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+}
+
+.t-course-calendar__link-list {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .t-course-calendar__link:first-child svg {
+    width: 90px;
+    height: 90px;
+  }
+  .t-course-calendar__link:last-child svg {
+    width: 156px;
+    height: 75px;
+  }
+}
